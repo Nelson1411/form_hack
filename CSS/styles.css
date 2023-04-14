@@ -1,0 +1,119 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+:root {
+    --background-color-body: #182246;
+    --background-form: #F2F3EB;
+    --color-underline: #474544;
+    --font-family: 'Montserrat', Arial, sans-serif;
+    --flecha-contenido: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.contenedor {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color-body);
+}
+
+.contenedor .contenedor-formulario {
+    position: relative;
+
+    height: 720px;
+    width: 810px;
+
+    background-color: var(--background-form)
+}
+
+.contenedor .contenedor-formulario .padding {
+    padding: 17px;
+    padding-bottom: 30px;
+    height: 100%;
+}
+
+.form {
+    height: 100%;
+    border: 3px solid  var(--color-underline);
+    font-family: var(--font-family)
+}
+
+.form .contenedor-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form .contenedor-titulo .titulo {
+    color: var(--color-underline);
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 18px;
+    margin-bottom: 12px;
+}
+
+.form .contenedor-titulo .linea-decoracion {
+    width: 80px;
+    border: 1px solid var(--color-underline);
+}
+
+.form .form-inputs {
+    padding: 80px 38px;
+}
+
+.form .form-inputs .input {
+    background-color: var(--background-form);
+    border: none;
+    border-bottom: 2px solid var(--color-underline);
+    width: 100%;
+    height: 1.5rem;
+}
+
+.form .form-inputs .input:focus {
+    outline: none;
+}
+
+.form .form-inputs .label {
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+    letter-spacing: .6px;
+    font-size: 1rem;
+}
+
+.form .form-inputs .nombre-correo {
+    width: 310px;
+}
+
+.form .form-inputs .inputs-nombre-correo {
+    display: flex;
+    flex-direction: row;
+    gap: 3.5rem;
+}
+
+.form .form-inputs .caja-inputs {
+    margin-bottom: 1.8rem;
+}
+
+.form .form-inputs .contenido {
+    height: 125px;
+}
+
+.form .form-inputs .estatus {
+    background: var(--flecha-contenido) no-repeat right;
+    position: relative;
+}
+
+.form .form-inputs .boton {
+    padding: 19px 30px;
+    background-color: var(--background-form);
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 700;
+    color: var(--color-underline);
+    cursor: pointer;
+}

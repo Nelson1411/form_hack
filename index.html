@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="./CSS/normalize.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="contenedor">
+        <main class="contenedor-formulario">
+            <div class="padding">
+                <form class="form">
+                    <div class="contenedor-titulo">
+                        <h1 class="titulo">
+                            • Solicitar Reunión •
+                        </h1>
+                        <div class="linea-decoracion"></div>
+                    </div>
+                    <section class="form-inputs">
+                        <div class="caja-inputs inputs-nombre-correo">
+                            <div>
+                                <label for="nombre" class="label">Nombre</label>
+                                <input id="nombre" type="text" class="input nombre-correo">
+                            </div>
+                            <div>
+                                <label for="correo" class="label">Correo</label>
+                                <input id="correo" type="text" class="input nombre-correo">
+                            </div>
+                        </div>
+                        <div class="caja-inputs">
+                            <label for="asunto" class="label">Asunto</label>
+                            <input id="asunto" type="text" class="input">
+                        </div>
+                        <div class="caja-inputs">
+                            <label for="estatus" class="label">estatus</label>
+                            <input type="text" id="estatus" class="input estatus">
+                        </div>
+                        <div class="caja-inputs">
+                            <label for="contenido" class="label">contenido</label>
+                            <textarea name="contenido" id="" cols="30" rows="10" class="input contenido"></textarea>
+                        </div>
+
+                        <button type="submit" class="boton">
+                            Enviar mensaje
+                        </button>
+                    </section>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
